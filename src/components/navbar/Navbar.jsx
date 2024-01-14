@@ -30,7 +30,7 @@ const Navbar = () => {
             <li>about</li>
             <li><Link to={"/portfolio"}>portfolio</Link></li>
             <li>contacts</li>
-            <div>
+            <div onClick={changeTheme}>
               {mode}
               <div>
                 <div className={styles.toggle} onClick={changeTheme}>

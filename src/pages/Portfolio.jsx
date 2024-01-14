@@ -11,7 +11,7 @@ const Portfolio = () => {
 
   const getDaata = async () => {
     try {
-      const response = await axios("../../db.json");
+      const response = await axios("https://final-exam-react.netlify.app/db.json");
       setPortfolio(response.data.portfolioItems);
     } catch (error) {
       console.log(error);
