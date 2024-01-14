@@ -5,7 +5,7 @@ import About from "./About";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-[80px]">
+    <div className="flex flex-col gap-[80px] ">
       <Banner />
       <Portfolio />
       <About />

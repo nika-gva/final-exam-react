@@ -22,7 +22,13 @@ const Portfolio = () => {
   }, []);
   return (
     <section className={styles.portfolio}>
-      <h1 className="capitalize text-[30px] font-bold mb-[30px]">portfolio</h1>
+      <motion.h1
+        initial={{ x: -200 }}
+        whileInView={{x:0, transition:{duration: 0.5}}}
+        className="capitalize text-[30px] font-bold mb-[30px]"
+      >
+        portfolio
+      </motion.h1>
       <motion.div className="flex flex-col gap-[70px]">
         {portfolio.map((item, index) => {
           return (
@@ -42,7 +48,7 @@ const Portfolio = () => {
               <div>
                 <img src={item.imageUrl} alt="img" />
               </div>
-              <h1>{item.title}</h1>
+              <h1 className="text-[20px]">{item.title}</h1>
               <h6>{item.description}</h6>
               <Link to={item.url}>
                 <button>view page</button>

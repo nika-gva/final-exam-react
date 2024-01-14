@@ -1,0 +1,8 @@
+@import url("../styles/_variables.scss");
+
+.about{
+    padding: 20px;
+    h1{
+        color: var(--oppositeCol);
+    }
+}

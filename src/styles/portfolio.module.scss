@@ -3,6 +3,7 @@
 .portfolio {
   background-color: var(--bgThird);
   padding: 10px;
+  color: var(--oppositeCol);
   div {
     .portfolioItem {
       background: var(--bgSecondary);
@@ -22,6 +23,7 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
+          border-radius: 10px;
         }
         &::after{
           width: 100%;

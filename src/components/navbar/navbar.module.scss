@@ -6,8 +6,10 @@
     display: flex;
     justify-content: space-between;
     padding: 10px   ;
-    position: relative;
     transition: all .3s;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
     .logo{
         color: var(--navtxtcol);
     }
