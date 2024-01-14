@@ -1,0 +1,27 @@
+:root{
+    --bgcol: #b7d1e0;
+    --menuCol: #000;
+    --themeCol: #000;
+    --themeBg:#0B2447;
+    --navtxtcol: #0B2447;
+    --oppositeCol: #0B2447;
+    --bgSecondary: #dfffff;
+    --textCol: #0B2447;
+    --bgThird: #e0f1f1;
+    --opTextCol: #e0f1f1;
+}
+[data-theme="dark"]{
+    --textCol: #E1F2FB;
+    --bgSecondary: #19376D;
+    --bgThird: #28467f;
+    --bgcol: #0B2447;
+    --opTextCol: #0B2447;
+    --menuCol: white;
+    --themeBg:#E1F2FB;
+    --navtxtcol: #E1F2FB;
+    --oppositeCol: #E1F2FB;
+}
+
+// [data-theme="light"]{
+//     --bgcol: #E1F2FB;
+// }

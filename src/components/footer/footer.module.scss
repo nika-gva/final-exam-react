@@ -1,0 +1,12 @@
+@import url("../../styles/_variables.scss");
+
+
+.footer{
+    background-color: var(--bgcol);
+    display: flex;
+    padding: 10px;
+    transition: all .3s;
+    h1{
+        color: var(--oppositeCol);
+    }
+}
