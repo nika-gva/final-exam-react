@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/portfolio.module.scss";
-import siteImage from "../assets/site1.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import data from "../../db.json";
 
 const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
 
   const getDaata = async () => {
     try {
-      const response = await axios("https://github.com/nika-gva/data/blob/main/db.json");
-      setPortfolio(response.data.portfolioItems);
+      const response = await axios("../../data.json");
+      // setPortfolio(response.data.posts);
+      console.log("CCAS " , response.data.portfolioItems)
     } catch (error) {
       console.log(error);
     }
