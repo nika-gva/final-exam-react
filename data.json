@@ -1,4 +1,4 @@
-{
+  {
     "portfolioItems": [
       {
         "title": "Hotel Ninama",
@@ -12,5 +12,71 @@
         "url": "",
         "imageUrl": "https://www.wallpaperup.com/uploads/wallpapers/2015/03/28/648848/78206164eaf6f3ae609fbd7162b79b6b.jpg"
       }
-    ]
+      ,
+      {
+        "title": "exqample 2",
+        "description": "Description of Project 2",
+        "url": "",
+        "imageUrl": "https://www.wallpaperup.com/uploads/wallpapers/2015/03/28/648848/78206164eaf6f3ae609fbd7162b79b6b.jpg"
+      }
+      ,
+      {
+        "title": "exqample 2",
+        "description": "Description of Project 2",
+        "url": "",
+        "imageUrl": "https://www.wallpaperup.com/uploads/wallpapers/2015/03/28/648848/78206164eaf6f3ae609fbd7162b79b6b.jpg"
+      },
+      {
+        "title": "exqample 2",
+        "description": "Description of Project 2",
+        "url": "",
+        "imageUrl": "https://www.wallpaperup.com/uploads/wallpapers/2015/03/28/648848/78206164eaf6f3ae609fbd7162b79b6b.jpg"
+      }
+    ],
+    "about": {
+      "name": "nika",
+      "surname": "gvarliani",
+      "image": "https://nikagv.netlify.app/images/myfoto2.jpeg"
+    },
+    "education": {
+      "BTU - Business And Technology University": [
+        "Information Technologies 2021 - Present"
+      ],
+      "College 'Tetnuldi'": [
+        "IT Support 2019 Sep. - 2021 Feb."
+      ],
+      "certificate": [
+        "Cisco IT Essential Certificate"
+      ],
+      "Diploma": [
+        "College 'Tetnildi' Vocational Education Diploma"
+      ]
+    },
+    "skills": {
+      "languages": [
+        "English - B1",
+        "Georgian(Native)"
+      ],
+      "markupLanguages": [
+        "HTML",
+        "CSS"
+      ],
+      "programmingLanguages": [
+        "javascript",
+        "React.js"
+      ],
+      "operatingSystems": [
+        "Windows 10",
+        "Windows 7",
+        "Linux"
+      ],
+      "microsoftOffice": [
+        "Microsoft Word",
+        "Power Point",
+        "Excel"
+      ]
+    },
+    "experience":{
+      "Nothing To Show Yet ...": [""]
+    }
   }

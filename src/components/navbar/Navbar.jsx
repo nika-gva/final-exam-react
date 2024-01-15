@@ -23,13 +23,13 @@ const Navbar = () => {
   return (
     <header>
       <div className={styles.navbar}>
-        <div className={`${styles.logo} font-bold text-[20px]`}><Link to={"/"}>Final</Link></div>
+        <div className={`${styles.logo} font-bold text-[20px] lg:text-[30px] xl:text-[35px] 2xl:text-[40px]`}><Link to={"/"}>Portfolio</Link></div>
         <nav style={{ height: menuOpen === "true" && "250px" }}>
           <ul>
             <Link to="/"><li>home</li></Link>
-            <li>about</li>
+            <li><Link to="about">about</Link></li>
             <li><Link to={"/portfolio"}>portfolio</Link></li>
-            <li>contacts</li>
+            <li><Link to="contacts">contacts</Link></li>
             <div onClick={changeTheme}>
               {mode}
               <div>

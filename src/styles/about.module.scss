@@ -1,8 +1,117 @@
 @import url("../styles/_variables.scss");
 
-.about{
-    padding: 20px;
-    h1{
-        color: var(--oppositeCol);
+.about {
+  padding: 0 20px;
+  margin-top: 50px;
+  h1 {
+    color: var(--oppositeCol);
+  }
+
+  .aboutBox {
+    .aboutImage {
+      width: 100%;
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
     }
+    .aboutContent {
+      margin-top: 30px;
+      color: var(--oppositeCol);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      ul {
+        justify-content: space-evenly;
+        border: 1px solid var(--oppositeCol);
+        li {
+          &:hover {
+            cursor: pointer;
+            color: red;
+          }
+        }
+      }
+    }
+    .skEdEx {
+      padding: 20px;
+      li {
+        color: red;
+      }
+      div {
+        p {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .about {
+    .aboutBox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      .aboutImage {
+        img {
+          width: 100%;
+        }
+      }
+      .aboutContent {
+        margin-top: 0px;
+        width: 100%;
+        ul {
+          width: 100%;
+        }
+      }
+      .skEdEx {
+        height: 300px;
+        overflow: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .about {
+    .aboutBox {
+        grid-template-columns: 40% 1fr;
+      .aboutContent {
+        div {
+          p {
+            font-size: 24px;
+          }
+        }
+        ul {
+          li {
+            font-size: 25px;
+          }
+        }
+      }
+      .skEdEx {
+        div {
+          li {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1536px) {
+  .about {
+    .aboutBox {
+        grid-template-columns: 30% 1fr;
+      .skEdEx {
+        height: 500px;
+      }
+    }
+  }
 }

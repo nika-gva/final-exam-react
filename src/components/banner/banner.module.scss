@@ -7,8 +7,8 @@
   padding: 60px 20px 0;
   position: relative;
   overflow: hidden;
-  border-radius:  0 0 30px 30px;
-  box-shadow:  0 1px 50px var(--oppositeCol);
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 1px 50px var(--oppositeCol);
   div {
     h1 {
       color: var(--oppositeCol);
@@ -27,5 +27,83 @@
     width: 100%;
     height: 100%;
     top: 0;
+  }
+}
+
+@media screen and (min-width: 421px) {
+  .banner {
+    .bgImage {
+      background-position: 0px -80px;
+      background-size: 150%;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (min-width: 669px) {
+  .banner {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .banner {
+    height: 500px;
+    border-radius: 0 0 1000px 0;
+    box-shadow: 0 1px 100px var(--oppositeCol);
+    div {
+      h1 {
+        color: var(--oppositeCol);
+        span {
+          color: blueviolet;
+        }
+      }
+    }
+    .bgImage {
+      background-size: 140%;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .banner {
+    
+    .bgImage {
+      background-size: 130%;
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  .banner {
+    height: 600px;
+    div {
+      &:nth-child(1){
+        margin: 40px;
+      }
+    }
+    .bgImage {
+      background-size: 120%;
+    }
+  }
+}
+@media screen and (min-width: 1281px) {
+  .banner {
+    height: 700px;
+    div {
+      h1{
+        &:nth-child(1){
+          font-size: 58px;
+        }
+        &:nth-child(2){
+          font-size: 60px;
+          span{
+            font-size: 62px;
+          }
+        }
+      }
+    }
+    .bgImage {
+      background-size: 120%;
+    }
   }
 }

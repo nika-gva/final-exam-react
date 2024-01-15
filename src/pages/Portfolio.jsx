@@ -3,28 +3,17 @@ import { motion } from "framer-motion";
 import styles from "../styles/portfolio.module.scss";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import {portfolioItems} from "../../data.json"
+import { portfolioItems } from "../../data.json";
+import data from "../../data.json";
 
 const Portfolio = () => {
-  const [portfolio, setPortfolio] = useState([]);
+  const [portfolio, setPortfolio] = useState(data.portfolioItems);
 
-  const getDaata = async () => {
-    try {
-      const response = await axios("https://final-exam-react.netlify.com/data.json");
-      // setPortfolio(response.data.posts);
-      console.log("CCAS " , response.data.portfolioItems)
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    getDaata();
-  }, []);
   return (
     <section className={styles.portfolio}>
       <motion.h1
         initial={{ x: -200 }}
-        whileInView={{x:0, transition:{duration: 0.5}}}
+        whileInView={{ x: 0, transition: { duration: 0.5 } }}
         className="capitalize text-[30px] font-bold mb-[30px]"
       >
         portfolio
@@ -36,9 +25,11 @@ const Portfolio = () => {
               key={index}
               initial={{
                 y: 200,
+                opacity: 0,
               }}
               whileInView={{
                 y: 0,
+                opacity: 1,
                 transition: {
                   duration: 0.5,
                 },
@@ -46,10 +37,12 @@ const Portfolio = () => {
               className={styles.portfolioItem}
             >
               <div>
-                <img src={item.imageUrl} alt="img" />
+                <div>
+                  <img src={item.imageUrl} alt="img" />
+                </div>
+                <h1 className="text-[20px]">{item.title}</h1>
+                <h6>{item.description}</h6>
               </div>
-              <h1 className="text-[20px]">{item.title}</h1>
-              <h6>{item.description}</h6>
               <Link to={item.url}>
                 <button>view page</button>
               </Link>

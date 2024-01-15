@@ -1,0 +1,68 @@
+@import url("../styles/_variables.scss");
+
+.contacts {
+  margin-top: 50px;
+  color: var(--oppositeCol);
+  padding: 20px;
+
+  h1 {
+    font-size: 30px;
+  }
+  .contactsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .contactsInfo{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+      color: var(--opTextCol);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      input,
+      textarea {
+        background: var(--oppositeCol);
+        padding: 7px;
+        border-radius: 10px;
+        border: 2px solid var(--oppositeCol);
+      }
+      p {
+        color: red;
+      }
+
+      input[type="submit"] {
+        font-weight: bold;
+        letter-spacing: 3px;
+        &:hover {
+          background: var(--bgCol);
+          color: var(--oppositeCol);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .contactsContent{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .contactsInfo{
+            padding: 40px 0 0 40px;
+            span{
+                font-size: 20px;
+            }
+        }
+        form{
+            padding: 0 40px 0 0;
+        }
+    }
+  }
+}

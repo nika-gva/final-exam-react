@@ -5,6 +5,7 @@
     background-color: var(--bgcol);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px   ;
     transition: all .3s;
     position: fixed;
@@ -112,7 +113,39 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
-    
+    .navbar{
+        nav{
+            position: relative;
+            flex-direction: row;
+            justify-content: end;
+            height: 100%;
+            border-bottom: none;
+            ul{
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+        .menuIcon{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .navbar{
+        nav{
+            
+            ul{
+                li{
+                    font-size: 22px;
+                }
+                div{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
 }

@@ -16,9 +16,12 @@ const Banner = () => {
           },
         }}
       >
-        <h1 className="text-[22px]">frontend developer</h1>
-        <h1 className="max-w-[200px] text-[25px]">
-          Hi, i am <span className="text-[26px] font-bold">Nika Gvarliani</span>{" "}
+        <h1 className="text-[22px] md:text-[38px]">frontend developer</h1>
+        <h1 className="max-w-[400px] text-[25px] md:text-[40px]">
+          Hi, i am{" "}
+          <span className="text-[26px] font-bold md:text-[45px]">
+            Nika Gvarliani
+          </span>{" "}
           from Georgia
         </h1>
       </motion.div>
@@ -27,8 +30,8 @@ const Banner = () => {
           y: 200,
         }}
         animate={{
-            y:-1,
-            transition:{ duration:1 }
+          y: -1,
+          transition: { duration: 1 },
         }}
         className={styles.bgImage}
       ></motion.div>
