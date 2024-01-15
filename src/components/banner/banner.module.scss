@@ -9,7 +9,8 @@
   overflow: hidden;
   border-radius: 0 0 30px 30px;
   box-shadow: 0 1px 50px var(--oppositeCol);
-  div {
+  .bannerText {
+    width: 200px;
     h1 {
       color: var(--oppositeCol);
       span {
@@ -32,6 +33,11 @@
 
 @media screen and (min-width: 421px) {
   .banner {
+    .bannerText {
+      width: 300px;
+      margin: 20px 0 0 ;
+      
+    }
     .bgImage {
       background-position: 0px -80px;
       background-size: 150%;
@@ -42,6 +48,17 @@
 
 @media screen and (min-width: 669px) {
   .banner {
+    .bannerText {
+      
+      h1 {
+        &:nth-child(2){
+          font-size: 30px;
+        }
+        span {
+          color: blueviolet;
+        }
+      }
+    }
     height: 400px;
   }
 }

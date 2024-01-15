@@ -15,9 +15,10 @@ const Banner = () => {
             duration: 0.3,
           },
         }}
+        className={styles.bannerText}
       >
         <h1 className="text-[22px] md:text-[38px]">frontend developer</h1>
-        <h1 className="max-w-[400px] text-[25px] md:text-[40px]">
+        <h1 className=" text-[25px] md:text-[40px]">
           Hi, i am{" "}
           <span className="text-[26px] font-bold md:text-[45px]">
             Nika Gvarliani
