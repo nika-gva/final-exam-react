@@ -10,7 +10,7 @@ const Portfolio = () => {
 
   const getDaata = async () => {
     try {
-      const response = await axios("/final-exam-react/data.json");
+      const response = await axios("https://final-exam-react.netlify.com/data.json");
       // setPortfolio(response.data.posts);
       console.log("CCAS " , response.data.portfolioItems)
     } catch (error) {
