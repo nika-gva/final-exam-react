@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import styles from "../styles/portfolio.module.scss";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import {portfolioItems} from "../../data.json"
 
 const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
 
   const getDaata = async () => {
     try {
-      const response = await axios("../../data.json");
+      const response = await axios("/final-exam-react/data.json");
       // setPortfolio(response.data.posts);
       console.log("CCAS " , response.data.portfolioItems)
     } catch (error) {
